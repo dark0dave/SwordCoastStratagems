@@ -287,7 +287,7 @@ DEFINE_ACTION_FUNCTION telekinetic_storm BEGIN
 		m.ab.add{s_location:=spell s_projectile:="%pro_telekinetic_storm%" s_range=60 s_target=4 s_casting_time=8}
 		n=max_caster_level - 16
 		m.ab.clone{s_level=17+entry_index|number:i=n}
-		m.ab_fx.add{s_opcode=12 s_power=8 s_parameter2b=64 s_target=2 s_timing=1 s_dicenumber=p_level=1?16:p_level s_dicesize=6 s_save_for_half=1 s_dispel_resist=1}
+		m.ab_fx.add{s_opcode=12 s_power=8 s_parameter2b=64 s_target=2 s_timing=1 s_dicenumber=p_level=1?16:p_level s_dicesize=6 s_save_vs_spell=1 s_save_for_half=1 s_dispel_resist=1}
 		if {is_iwd}
 		{{
 			m.ab_fx.add{s_opcode=215 s_power=8 s_target=2 s_timing=1 s_dispel_resist=1 s_resource:=alterh}
