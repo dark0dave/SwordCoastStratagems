@@ -212,7 +212,7 @@ BEGIN
 	m_resist_magic=50
 	m.cre_add_items{BL3-12M4(weapon1)|replace:i=1}
     // change color for EE fiends
-	IF {enhanced_edition} 
+	IF {enhanced_edition AND FILE_EXISTS_IN_GAME "mtan_gr.bmp"}
 	{{
 		LPF check_ini STR_VAR ini=no_nabassu_color_change RET value END
 		IF {!value} {{m_animation:=FIEND_GREEN}}

@@ -1311,7 +1311,7 @@ LAF run STR_VAR file=abazigal location=ascension END
 BEGIN @3324 DESIGNATED 6840 GROUP @6
 REQUIRE_PREDICATE !GAME_IS iwdee @50009
 REQUIRE_PREDICATE MOD_IS_INSTALLED "setup-stratagems.tp2" 5900 || IS_AN_INT stratagems_component_5900_installed @16025
-REQUIRE_PREDICATE MOD_IS_INSTALLED "setup-stratagems.tp2" 6030 || IS_AN_INT stratagems_component_6030_installed @16045
+REQUIRE_PREDICATE MOD_IS_INSTALLED "setup-stratagems.tp2" 6030 || IS_AN_INT stratagems_component_6030_installed @16046
 
 REQUIRE_PREDICATE !GAME_IS ~tutu tutu_totsc bgee~ @16000
 REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~fingrom.cre~ @3314
